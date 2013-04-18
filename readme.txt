@@ -1,11 +1,11 @@
 === Plugin Name ===
 
 Name: Print Button Shortcode
-Contributors: MyWebsiteAdvisor
+Contributors: MyWebsiteAdvisor, ChrisHurst
 Tags: print, shortcode
 Requires at least: 2.9
-Tested up to: 3.3.1
-Stable tag: 1.0
+Tested up to: 3.4.2
+Stable tag: 1.0.1
 
 
 
@@ -59,3 +59,5 @@ Developer Website: http://MyWebsiteAdvisor.com
 = 1.0 =
 * Initial release
 
+= 1.0.1 =
+* updated shortcode for IE compatibility.

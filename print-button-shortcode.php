@@ -3,7 +3,7 @@
 Plugin Name: Print Button Shortcode
 Plugin URI: http://MyWebsiteAdvisor.com
 Description: Shortcode to add a Print Button that prints a specified HTML element.
-Version: 1.0
+Version: 1.0.1
 Author: MyWebsiteAdvisor
 Author URI: http://MyWebsiteAdvisor.com
 */
@@ -37,13 +37,14 @@ function sc_show_print_button($atts, $content = null){
 	
 	if($target_element == ''){$target_element = "document.body";}
 	
-	$output = "<input type='button' onClick='return pop_print()' value='Print Latest Portfolio'/>
+	$output = "<input type='button' onClick='return pop_print()' value='Print this page'/>
 	
 	
 	<script type='text/javascript'>
 	function pop_print(){
-		w=window.open(null, 'Print Page', 'scrollbars=yes');
+		w=window.open(null, 'Print_Page', 'scrollbars=yes');
 		w.document.write(jQuery('$target_element').html());
+		w.document.close();
 		w.print();
 	}
 	</script>";
